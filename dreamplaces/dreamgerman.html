@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GERMANY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,469;1,14..32,469&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,150;1,150&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: url("backgrounds/background5.png") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            background-color: #cae4ce;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8fc0a9;
+            padding: 12px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a i {
+            margin-right: 5px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cae4ce;
+        }
+
+        nav a:active, nav a:active i {
+        color: #276967;
+        }
+
+        .dreams-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .dreams-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 2px 1px 6px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            font-family: Georgia;
+            display: inline;
+            font-size: 35px;
+            color: #cae4ce;
+            margin: 20px;
+            text-shadow: 2px 1px 10px black;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #33443C;
+            text-underline-offset: 12px;
+        }
+
+        .text-description {
+            text-align: justify; 
+            color: #000000;
+            font-weight: 20;
+            font-family: "Inter", sans-serif;
+            line-height: 1.9; 
+            font-size: 18px;
+            margin: 30px;
+            text-indent: 70px;
+
+        }
+
+        .background-text {
+            position: absolute;
+            font-family: Georgia;
+            font-size: 150px;
+            font-weight: bold;
+            color: #276967;
+            opacity: 20%;
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 10px 30px 20px 0;
+            background-color: #8FC0A9;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .nav-box:hover {
+            background-color: #c8d5b9;
+        }
+
+        .nav-box:active {
+            background-color: #92ab82;
+        }
+
+        .boxtype {
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #8fc0a9;
+            box-shadow: 0 0 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .image_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .image-container {
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 5px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            border-radius: 16px; 
+        }
+
+        .image-container img {
+            border-radius: 16px;
+            width: 300px;
+            height: 300px; 
+            object-fit: cover;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .places-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: #8FC0A9;
+            padding: 15px;
+            margin: 80px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            max-width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .places-description {
+            text-align: left;
+            color: #000000;
+            font-weight: bold;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .places-description p {
+            text-align: justify;
+            text-indent: 70px;
+            font-family: Verdana;
+            font-weight: 1;
+            margin: 5px 18px 15px 18px;
+        }
+
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .media-container img {
+            width: 300px;
+            height: 350x;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 30px 10px 10px 40px;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #cae4ce;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #92ab82;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+       .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .button-container a {
+            background-color: #cae4ce;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house fa-sm"></i>HOME</a></li>
+            <li><a href="biomain.html"><i class="fa-solid fa-child-dress fa-sm"></i>BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html"><i class="fa-solid fa-heart fa-sm"></i>SKILLS</a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file fa-sm"></i>RESUME</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image fa-sm"></i> PHOTO GALLERY</a></li>
+            <li><a href="favorites.html"><i class="fa-solid fa-star fa-sm"></i>MEDIA</a></li>
+            <li><a href="goals.html"><i class="fa-solid fa-location-dot fa-sm"></i>GOALS</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="dreams-section">
+        <div class="background-text">DREAM PLACES</div>
+        <h1>DREAM PLACES</h1>
+        <ul>
+            <li><a href="dreamplaces.html" class="nav-box">DREAM PLACE</a></li>
+            <li><a href="bucketlist.html" class="nav-box">BUCKET LIST</a></li>
+        </ul>
+    </div>
+
+
+    <div class="image_container">
+        <div class="image-container">
+            <a href="dreamplaces/german1.jpg" target="winImage">
+                <img src="dreamplaces/german1.jpg" alt="The History of the Wall">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="dreamplaces/german2.jpg" target="winImage">
+                <img src="dreamplaces/german2.jpg" alt="The Great Castle">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="dreamplaces/german3.jpg" target="winImage">
+                <img src="dreamplaces/german3.jpg" alt="A Fun Festival">
+            </a>
+        </div>
+    </div>   
+
+
+    <div class="boxtype">
+        <h2>The Joy in Germany</h2>
+        <p class="text-description">
+            Germany, a country rich in history and culture, has always intrigued me. 
+            I would love to visit Berlin, the capital, to explore the Berlin Wall, the Brandenburg Gate, and learn more about its historical significance.
+            Experiencing the fairy-tale charm of Neuschwanstein Castle in Bavaria and the vibrant Christmas markets during winter would be incredible.
+            The blend of modernity and tradition in Germany makes it a fascinating destination.<br><br>
+
+            Here are some of the sights I'd love to see:<br>
+            
+            1. <b>The Berlin Wall Memorial</b>, a poignant site that preserves the history of Germany’s division, offers visitors a chance to reflect on its significance. 
+            The memorial includes original wall sections, the "death strip," and an outdoor exhibition that tells the story of those affected by the Cold War. 
+            A visit here provides a powerful insight into Berlin’s past and its journey toward reunification..<br><br>
+            
+            2. Neuschwanstein Castle, perched atop a rugged hill in Bavaria, is the ultimate fairy-tale destination. 
+            Built by King Ludwig II, its whimsical towers and breathtaking mountain backdrop make it one of Germany’s most picturesque landmarks. 
+            The castle inspired Disney’s Sleeping Beauty Castle, and its lavish interiors, including the ornate Throne Hall, transport visitors into a world of fantasy and history.<br><br>
+
+            3. The lively Oktoberfest in Munich for a taste of local culture. 
+            The world’s largest folk festival, is a vibrant celebration of Bavarian culture, beer, and tradition. 
+            Held annually, it attracts millions of visitors who come to enjoy steins of beer, traditional music, and hearty German cuisine like pretzels and bratwurst. 
+            The festival’s lively atmosphere, colorful parades, and historic beer tents make it an unmissable experience for anyone looking to immerse themselves in Germany’s festive spirit.<br></p>
+            </div>
+
+            <div class="places-box">
+                <div class="media-container">
+                    <a href="dreamplaces/german4.jpg" target="_self">
+                    <img src="dreamplaces/german4.jpg" alt="Map for Germany" title="How To Get There">
+                </a>
+            </div>
+                <div class="places-description">
+                    <h2>How To Get There</h2>
+                    <p>To get to Germany, you can fly into major international airports like <i>Berlin Brandenburg Airport (BER)</i> or <i>Munich Airport (MUC)</i>, both of which are well-connected to public transportation. 
+                        The Berlin Wall Memorial is easily accessible via the S-Bahn or U-Bahn, with the <i>Bernauer Straße</i> station being the closest stop. 
+                        To visit Neuschwanstein Castle, take a train from Munich to Füssen, followed by a bus or a scenic hike up to the castle. 
+                        If you're heading to Oktoberfest in Munich, the <i>Theresienwiese</i> station on the U-Bahn provides direct access to the festival grounds. 
+                        For convenient travel across the country, Germany’s efficient <i>Deutsche Bahn</i> trains offer high-speed connections between major cities and attractions.<br><br>
+                    
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Book your tickets <a href="https://us.trip.com/flights/showfarefirst?lowpricesource=lowPriceCalendar&triptype=RT&class=Y&quantity=1&childqty=0&babyqty=0&dcity=mnl&acity=muc&dairport=mnl&ddate=2025-04-05&dcityName=Manila&acityName=Munich&rdate=2025-04-14&locale=en-US&curr=PHP">here</a>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Book your train tickets <a href="https://www.raileurope.com/en-us/destinations/trains-germany?cmpid=PSN024101&ef_id=Cj0KCQjwkZm_BhDrARIsAAEbX1HMeBt_4teuHMBfsLV3CC3lfJ2wjLUNnQNzWwa7-ZeZTSVZqid-u08aAhKaEALw_wcB:G:s&s_kwcid=AL!9357!3!707754090684!!!g!!&gad_source=1&gclid=Cj0KCQjwkZm_BhDrARIsAAEbX1HMeBt_4teuHMBfsLV3CC3lfJ2wjLUNnQNzWwa7-ZeZTSVZqid-u08aAhKaEALw_wcB">here</a></p>
+                </div>
+            </div>
+    
+    
+            <div class="image_container">
+                <div class="image-container">
+                    <a href="dreamplaces/german5.jpg" target="_self">
+                        <img src="dreamplaces/german5.jpg" alt="Brandenburg Gate" title="Brandenburg Gate">
+                    </a>
+                </div>
+                <div class="image-container">
+                    <a href="dreamplaces/german6.jpg" target="_self">
+                        <img src="dreamplaces/german6.jpg" alt="Hohenschwangau Castle" title="Hohenschwangau Castle">
+                    </a>
+                </div>
+                <div class="image-container">
+                    <a href="dreamplaces/german7.jpg" target="_self">
+                        <img src="dreamplaces/german7.jpg" alt="Viktualienmarkt" title="Viktualienmarkt">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="boxtype">
+                <h2>Other Nearby Places To Visit</h2>
+                <p class="text-description">
+            Near the Berlin Wall Memorial, you’ll find several significant landmarks that provide deeper insight into Germany’s history. 
+            Just a short walk away is the <b>Brandenburg Gate</b>, an iconic symbol of unity that once stood on the border between East and West Berlin. 
+            Its grand neoclassical architecture and historical significance make it a must-visit spot for anyone exploring the capital. 
+            Standing beneath its towering columns, you can reflect on the momentous events that shaped modern Germany.<br><br>
+            Not far from Neuschwanstein Castle is <b>Hohenschwangau Castle</b>, a lesser-known but equally enchanting fortress where <a href="https://www.neuschwanstein.de/englisch/ludwig/biography.htm">King Ludwig II</a> spent much of his childhood. 
+            Overlooking the picturesque <i>Alpsee Lake</i>, this castle offers a glimpse into the life of <a href="https://www.britannica.com/topic/House-of-Wittelsbach">Bavarian royalty</a> with its beautifully preserved rooms and artifacts. 
+            The surrounding trails also provide breathtaking views of both castles, making it an excellent destination for nature lovers and history enthusiasts alike.<br><br>
+            Close to the Oktoberfest grounds in Munich, you’ll find the <b>Viktualienmarkt</b>, a vibrant open-air market perfect for experiencing Bavarian flavors beyond beer and pretzels.
+            Here, you can browse fresh produce, local cheeses, and traditional delicacies while soaking in the lively atmosphere.
+            With beer gardens and traditional food stalls scattered throughout, it’s an ideal spot to enjoy authentic German cuisine in the heart of the city.</p>
+                </div>
+                
+                <div class="button-container">
+                    <a href="dreamplaces.html" class="nav-box">Go Top</a>
+                </div>
+</body>
+</html>

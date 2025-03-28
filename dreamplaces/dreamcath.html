@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NOTRE DAME CATHEDRAL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,469;1,14..32,469&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,150;1,150&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: url("backgrounds/background5.png") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            background-color: #cae4ce;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8fc0a9;
+            padding: 12px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a i {
+            margin-right: 5px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cae4ce;
+        }
+
+        nav a:active, nav a:active i {
+        color: #276967;
+        }
+
+        .dreams-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .dreams-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 2px 1px 6px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            font-family: Georgia;
+            display: inline;
+            font-size: 35px;
+            color: #cae4ce;
+            margin: 20px;
+            text-shadow: 2px 1px 10px black;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #33443C;
+            text-underline-offset: 12px;
+        }
+
+        .text-description {
+            text-align: justify; 
+            color: #000000;
+            font-weight: 20;
+            font-family: "Inter", sans-serif;
+            line-height: 1.9; 
+            font-size: 18px;
+            margin: 30px;
+            text-indent: 70px;
+
+        }
+
+        .background-text {
+            position: absolute;
+            font-family: Georgia;
+            font-size: 150px;
+            font-weight: bold;
+            color: #276967;
+            opacity: 20%;
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 10px 30px 20px 0;
+            background-color: #8FC0A9;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .nav-box:hover {
+            background-color: #c8d5b9;
+        }
+
+        .nav-box:active {
+            background-color: #92ab82;
+        }
+
+        .boxtype {
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #8fc0a9;
+            box-shadow: 0 0 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .image_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .image-container {
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 5px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            border-radius: 16px; 
+        }
+
+        .image-container img {
+            border-radius: 16px;
+            width: 300px;
+            height: 300px; 
+            object-fit: cover;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .places-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: #8FC0A9;
+            padding: 15px;
+            margin: 80px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            max-width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .places-description {
+            text-align: left;
+            color: #000000;
+            font-weight: bold;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .places-description p {
+            text-align: justify;
+            text-indent: 70px;
+            font-family: "Inter", sans-serif;
+            font-weight: 1;
+            margin: 5px 18px 15px 18px;
+        }
+
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .media-container img {
+            width: 300px;
+            height: 350x;
+            object-fit: cover;
+            margin-left: 50px;
+            border-radius: 10px;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #cae4ce;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #92ab82;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+       .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .button-container a {
+            background-color: #cae4ce;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house fa-sm"></i>HOME</a></li>
+            <li><a href="biomain.html"><i class="fa-solid fa-child-dress fa-sm"></i>BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html"><i class="fa-solid fa-heart fa-sm"></i>SKILLS</a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file fa-sm"></i>RESUME</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image fa-sm"></i> PHOTO GALLERY</a></li>
+            <li><a href="favorites.html"><i class="fa-solid fa-star fa-sm"></i>MEDIA</a></li>
+            <li><a href="goals.html"><i class="fa-solid fa-location-dot fa-sm"></i>GOALS</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="dreams-section">
+        <div class="background-text">DREAM PLACES</div>
+        <h1>DREAM PLACES</h1>
+        <ul>
+            <li><a href="dreamplaces.html" class="nav-box">DREAM PLACE</a></li>
+            <li><a href="bucketlist.html" class="nav-box">BUCKET LIST</a></li>
+        </ul>
+    </div>
+
+
+    <div class="image_container">
+        <div class="image-container">
+            <a href="dreamplaces/cath1.jpg" target="_self">
+                <img src="dreamplaces/cath1.jpg" alt="The Rose Window" title="The Rose Window">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="dreamplaces/cath2.jpg" target="_self">
+                <img src="dreamplaces/cath2.jpg" alt="The Monsters" title="The Gargoyles">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="dreamplaces/cath3.jpg" target="_self">
+                <img src="dreamplaces/cath3.jpg" alt="The Bell Towers" title="The Bell Towers">
+            </a>
+        </div>
+    </div>   
+
+
+    <div class="boxtype">
+        <h2>The Spirit of Notre Dame Cathedral</h2>
+        <p class="text-description">
+            <b>The Notre-Dame Cathedral</b> is a breathtaking example of Gothic architecture in the heart of Paris, France. Its intricate sculptures, towering spires, and stunning stained glass windows make it one of the most remarkable landmarks in the world. 
+            I have always wanted to visit and admire its beauty firsthand, especially the famous bell towers that offer a spectacular view of the city.
+            The cathedral’s façade, adorned with detailed carvings of biblical figures, showcases the incredible craftsmanship of medieval artisans.
+            Inside, the massive rose windows cast colorful light across the vast interior, creating a truly awe-inspiring atmosphere.
+            Beyond its architectural splendor, Notre-Dame has witnessed significant historical events, from royal coronations to moments of national unity.
+            Standing where so much history has unfolded would be an unforgettable experience. 
+            Despite the tragic fire in 2019, the ongoing restoration efforts make it even more meaningful to visit.
+             Seeing the dedication to preserving its legacy is a testament to its importance as a cultural and historical treasure. 
+             I hope to one day walk through its grand halls and appreciate its magnificence in person.<br><br>
+
+            Here are some of the sights I'd love to see:<br>
+            1. The <b>rose windows</b> with their vibrant stained glass designs, are among the most breathtaking features of the cathedral. 
+            These intricate masterpieces date back to the 13th century and depict biblical scenes and saints, creating a mesmerizing kaleidoscope of colors when sunlight filters through. 
+            They are a true testament to medieval craftsmanship and religious devotion.<br><br>
+
+            2. <b>The Gargoyles</b> that guard the cathedral’s exterior are more than just eerie, mythical creature. They serve an important function in directing rainwater away from the building. 
+            Each one has a unique, expressive face, adding to the gothic charm of Notre-Dame. 
+            These stone guardians have inspired countless legends and stories, making them a must-see for visitors who appreciate history and architecture.<br><br>
+
+            3. The view from <b>the bell towers</b> offers a stunning panorama of Paris, allowing visitors to take in the city's beauty from above. 
+            Climbing the 387 steps to the top rewards you with a breathtaking sight of landmarks such as the Eiffel Tower and the Seine River. 
+            Standing near the massive bells, including the famous Emmanuel Bell, you can also imagine the deep, resonant chimes that once echoed across the city.<br></p>
+
+
+   
+        </div>
+
+        <div class="places-box">
+            <div class="media-container">
+                <a href="dreamplaces/cath4.jpg" target="_self">
+                <img src="dreamplaces/cath4.jpg" alt="Map for Cathedral" title="How To Get There">
+            </a>
+        </div>
+            <div class="places-description">
+                <h2>How To Get There</h2>
+                <p>To visit the Notre-Dame Cathedral in Paris, you can take the <i>Métro</i> and get off at <i>Cité station (Line 4)</i> or <i>Saint-Michel–Notre-Dame station (Lines 4 and RER B/C)</i>, both within walking distance. 
+                    Several bus routes, including lines 21, 24, 27, 38, 47, 85, and 96, also stop nearby. 
+                    Paris' bike rental system, <i>Vélib'</i>, has docking stations close to the cathedral for those who prefer cycling. 
+                    Walking is also an option, especially if you're exploring nearby areas like the <i>Latin Quarter.</i><br><br>
+                
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Book your tickets <a href="https://us.trip.com/flights/showfarefirst?dcity=mnl&acity=par&ddate=2025-04-05&rdate=2025-04-14&triptype=rt&class=y&lowpricesource=searchform&quantity=1&searchboxarg=t&nonstoponly=off&locale=en-US&curr=PHP">here</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Train tickets can be found <a href="https://www.thetrainline.com/trains/france?gad_source=1&gclid=CjwKCAjw7pO_BhAlEiwA4pMQvF1f4QbhZxTjvjy6raOiKsfxTqe8roaLtiyy2h0oFifB-D6BRP3mKxoCtPYQAvD_BwE">here</a>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bike Rental <a href="https://secretsofparis.com/practical/using-the-velib-bike-service-in-paris/">Information</a></p>
+            </div>
+        </div>
+
+
+        <div class="image_container">
+            <div class="image-container">
+                <a href="dreamplaces/cath5.jpg" target="_self">
+                    <img src="dreamplaces/cath5.jpg" alt="Sainte-Chapelle" title="Sainte-Chapelle">
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="dreamplaces/cath6.jpg" target="_self">
+                    <img src="dreamplaces/cath6.jpg" alt="Conciergerie" title="Conciergerie">
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="/dreamplaces/cath7.jpg" target="_self">
+                    <img src="dreamplaces/cath7.jpg" alt="Place Dauphine" title="Place Dauphine">
+                </a>
+            </div>
+        </div>
+
+        <div class="boxtype">
+            <h2>Other Nearby Places To Visit</h2>
+            <p class="text-description">
+                Nearby the Notre-Dame Cathedral, you’ll find several iconic landmarks that showcase the rich history of Paris.
+                Just a short walk away is <b>Sainte-Chapelle</b>, famous for its breathtaking stained glass windows that create a mesmerizing kaleidoscope of colors when sunlight streams through.
+                The intricate Gothic architecture and the detailed biblical scenes depicted on the glass make it a must-see for visitors who appreciate art and history. 
+                Standing inside, you can admire the craftsmanship that has endured for centuries, offering a glimpse into the grandeur of medieval France.<br><br>
+                Right next to Sainte-Chapelle is the <b>Conciergerie</b>, a former royal palace turned prison, most famously known for holding <a href="https://www.britannica.com/biography/Marie-Antoinette-queen-of-France">Marie Antoinette</a>  before her execution. 
+                Walking through its stone corridors and prison cells gives you a haunting yet fascinating look into the darker chapters of Parisian history. 
+                You can also see a recreation of Marie Antoinette’s cell, along with historical artifacts that transport you back to the days of the French Revolution. 
+                The contrast between its grand halls and stark prison quarters reflects its transformation over the centuries.<br><br>
+                If you’re looking for a peaceful retreat, <b>Place Dauphine</b> is the perfect spot to take a break. 
+                Nestled on the <i>Île de la Cité</i>, this charming square offers a quiet escape from the busy streets, with tree-lined walkways, benches, and a relaxed atmosphere. 
+                It’s an ideal place to sit and unwind, whether you want to read a book, enjoy a coffee, or simply watch locals play pétanque. 
+                The historic buildings surrounding the square add to its timeless charm, making it a hidden gem just steps away from some of Paris’s most significant landmarks.</p>
+            </div>
+    
+        
+
+        <div class="button-container">
+            <a href="dreamplaces.html" class="nav-box">Go Top</a>
+        </div>
+</body>
+</html>

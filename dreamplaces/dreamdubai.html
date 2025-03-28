@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DUBAI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,469;1,14..32,469&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,150;1,150&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            background: url("backgrounds/background5.png") no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            background-color: #cae4ce;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8fc0a9;
+            padding: 12px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin: 0 10px;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a i {
+            margin-right: 5px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #cae4ce;
+        }
+
+        nav a:active, nav a:active i {
+        color: #276967;
+        }
+
+        .dreams-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+        }
+
+        .dreams-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 70px;
+        }
+
+        h1 {
+            font-family: Georgia;
+            font-size: 89px;
+            color: #8FC0A9;
+            text-shadow: 2px 1px 6px black;
+            margin-bottom: 20px;
+            letter-spacing: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h2 {
+            font-family: Georgia;
+            display: inline;
+            font-size: 35px;
+            color: #cae4ce;
+            margin: 20px;
+            text-shadow: 2px 1px 10px black;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-decoration-color: #33443C;
+            text-underline-offset: 12px;
+        }
+
+        .text-description {
+            text-align: justify; 
+            color: #000000;
+            font-weight: 20;
+            font-family: "Inter", sans-serif;
+            line-height: 1.9; 
+            font-size: 18px;
+            margin: 30px;
+            text-indent: 70px;
+
+        }
+
+        .background-text {
+            position: absolute;
+            font-family: Georgia;
+            font-size: 150px;
+            font-weight: bold;
+            color: #276967;
+            opacity: 20%;
+            white-space: nowrap;
+            letter-spacing: 1px;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-box {
+            display: inline-block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 10px 30px 20px 0;
+            background-color: #8FC0A9;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .nav-box:hover {
+            background-color: #c8d5b9;
+        }
+
+        .nav-box:active {
+            background-color: #92ab82;
+        }
+
+        .boxtype {
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #8fc0a9;
+            box-shadow: 0 0 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .image_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .image-container {
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 5px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            border-radius: 16px; 
+        }
+
+        .image-container img {
+            border-radius: 16px;
+            width: 300px;
+            height: 300px; 
+            object-fit: cover;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .places-box {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            background-color: #8FC0A9;
+            padding: 15px;
+            margin: 80px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px;
+            max-width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .places-description {
+            text-align: left;
+            color: #000000;
+            font-weight: bold;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .places-description p {
+            text-align: justify;
+            text-indent: 70px;
+            font-family: "Inter", sans-serif;
+            font-weight: 1;
+            margin: 5px 23px 15px 18px;
+        }
+
+
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .media-container img {
+            width: 350px;
+            height: 400x;
+            object-fit: cover;
+            margin: 50px 10px 5px 30px;
+            border-radius: 10px;
+        }
+
+        a:link {
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #cae4ce;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #92ab82;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+       .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 90%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .button-container a {
+            background-color: #cae4ce;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house fa-sm"></i>HOME</a></li>
+            <li><a href="biomain.html"><i class="fa-solid fa-child-dress fa-sm"></i>BIOGRAPHY</a></li>
+            <li><a href="skillsmain.html"><i class="fa-solid fa-heart fa-sm"></i>SKILLS</a></li>
+            <li><a href="resume.html"><i class="fa-solid fa-file fa-sm"></i>RESUME</a></li>
+            <li><a href="gallery.html"><i class="fa-solid fa-image fa-sm"></i> PHOTO GALLERY</a></li>
+            <li><a href="favorites.html"><i class="fa-solid fa-star fa-sm"></i>MEDIA</a></li>
+            <li><a href="goals.html"><i class="fa-solid fa-location-dot fa-sm"></i>GOALS</a></li>
+
+        </ul>
+    </nav>
+
+
+    <div class="dreams-section">
+        <div class="background-text">DREAM PLACES</div>
+        <h1>DREAM PLACES</h1>
+        <ul>
+            <li><a href="dreamplaces.html" class="nav-box">DREAM PLACE</a></li>
+            <li><a href="bucketlist.html" class="nav-box">BUCKET LIST</a></li>
+        </ul>
+    </div>
+
+
+    <div class="image_container">
+        <div class="image-container">
+            <a href="dreamplaces/dubai1.jpg" target="winImage">
+                <img src="dreamplaces/dubai1.jpg" alt="The Burj Khalifa">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="dreamplaces/dubai2.jpg" target="winImage">
+                <img src="dreamplaces/dubai2.jpg" alt="The Luxurious Hotel">
+            </a>
+        </div>
+        <div class="image-container">
+            <a href="dreamplaces/dubai3.jpg" target="winImage">
+                <img src="dreamplaces/dubai3.jpg" alt="The Desert of Dubai">
+            </a>
+        </div>
+    </div>   
+
+
+    <div class="boxtype">
+        <h2>The Modern World of Dubai</h2>
+        <p class="text-description">
+            Dubai, located in the United Arab Emirates, is a city of modern wonders and incredible cultural diversity. 
+            I’ve always wanted to visit to experience its iconic skyscrapers like the Burj Khalifa, explore the luxury shopping malls, and see the breathtaking Palm Jumeirah. 
+            The contrast between its traditional markets, known as souks, and futuristic architecture fascinates me. Visiting the Dubai Desert for a safari experience would be unforgettable.<br><br>
+            
+            Here are some of the sights I'd love to see:<br>
+            
+            1. <b>The Burj Khalifa</b>, the world's tallest building, stands at an astonishing 828 meters and offers breathtaking views of Dubai from its observation decks. 
+            The architectural marvel is a symbol of modern engineering and luxury, with a design inspired by Islamic architecture. 
+            Visitors can experience the thrill of ascending to the 148th floor for a panoramic view of the city's skyline..<br><br>
+            
+            2. The luxurious <b>Burj Al</b> Arab hotel, often considered the world's only seven-star hotel, is an iconic landmark known for its sail-shaped design and unparalleled opulence. 
+            Built on its own artificial island, it offers world-class hospitality, Michelin-starred dining, and lavish suites with breathtaking ocean views. 
+            Even if you’re not staying there, you can visit for afternoon tea at the Skyview Bar or enjoy a fine dining experience at one of its renowned restaurants.<br><br>
+            
+            3. The vast, golden dunes of the <b>Dubai Desert</b> offer an unforgettable escape into the Arabian landscape.
+            Visitors can embark on a thrilling desert safari, which includes dune bashing, camel rides, and traditional Bedouin-style entertainment.
+            As the sun sets over the sand dunes, the desert transforms into a magical landscape, making it the perfect place to experience the beauty and culture of Dubai beyond its urban skyline.<br></p>
+        </div>
+
+        <div class="places-box">
+            <div class="media-container">
+                <a href="dreamplaces/dubai4.jpg" target="_self">
+                <img src="dreamplaces/dubai4.jpg" alt="Map for Dubai" title="How To Get There">
+            </a>
+        </div>
+            <div class="places-description">
+                <h2>How To Get There</h2>
+                <p>To get to Dubai, you can fly into <i>Dubai International Airport (DXB)</i>, which serves as a major hub for international travel. 
+                    From there, taxis, metro lines, and ride-hailing services make it easy to reach the city's top attractions. 
+                    The Burj Khalifa, the world's tallest building, is accessible via the <i>Dubai Metro’s Red Line</i>, stopping at the Burj Khalifa/Dubai Mall station. 
+                    For a visit to the Burj Al Arab, taxis or private car hires are the best options since the hotel is located on its own island. I
+                    f you want to explore the golden dunes of the Dubai Desert, booking a guided desert safari is recommended, as they provide transportation, dune bashing, and cultural experiences.<br><br>
+                
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Book your tickets <a href="https://us.trip.com/flights/showfarefirst?dcity=mnl&acity=dxb&ddate=2025-04-05&rdate=2025-04-14&triptype=rt&class=y&lowpricesource=searchform&quantity=1&searchboxarg=t&nonstoponly=off&locale=en-US&curr=PHP">here</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Information about Metro Line can be found <a href="https://www.visitdubai.com/en/articles/guide-to-dubai-metro">here</a></p>
+            </div>
+        </div>
+
+
+        <div class="image_container">
+            <div class="image-container">
+                <a href="dreamplaces/dubai5.jpg" target="_self">
+                    <img src="dreamplaces/dubai5.jpg" alt="The Dubai Mall" title="The Dubai Mall">
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="dreamplaces/dubai6.jpg" target="_self">
+                    <img src="dreamplaces/dubai6.jpg" alt="Souk Madinat Jumeirah" title="Souk Madinat Jumeirah">
+                </a>
+            </div>
+            <div class="image-container">
+                <a href="dreamplaces/dubai7.jpg" target="_self">
+                    <img src="dreamplaces/dubai7.jpg" alt="Dubai Marina" title="Dubai Marina">
+                </a>
+            </div>
+        </div>
+
+        <div class="boxtype">
+            <h2>Other Nearby Places To Visit</h2>
+            <p class="text-description">
+                Nearby the Burj Khalifa, you’ll find several incredible attractions that showcase the modern and luxurious side of Dubai. 
+                Just a short walk away is <b>The Dubai Mall</b>, one of the largest shopping malls in the world, offering a vast selection of high-end stores, gourmet restaurants, and entertainment options, including an ice rink and the breathtaking Dubai Aquarium & Underwater Zoo. 
+                The mall’s grand architecture and dazzling displays make it a must-visit destination, drawing millions of visitors each year. 
+                Whether you're shopping for luxury brands or simply exploring its many attractions, The Dubai Mall is an experience like no other.<br><br>
+                
+                Right next to the Burj Al Arab is <b>Souk Madinat Jumeirah</b>, a traditional Arabian marketplace designed to reflect the charm of old Dubai with its winding alleyways, wooden archways, and beautiful canals. 
+                This lively souk offers a unique blend of boutique shops, artisan crafts, and waterfront dining with stunning views of the Burj Al Arab. 
+                Walking through its lantern-lit pathways, you can enjoy the scent of exotic spices, the sounds of traditional music, and the warmth of Emirati hospitality, making it an enchanting stop for visitors.<br><br>
+                
+                If you’re looking for a vibrant waterfront experience, <b>Dubai Marina</b> is the perfect place to explore. 
+                This modern district, lined with towering skyscrapers and luxury yachts, offers a stunning blend of urban elegance and leisure. 
+                The Marina Walk is an ideal spot to take a relaxing stroll, dine at world-class restaurants, or enjoy a boat cruise along the sparkling waters. 
+                Whether you visit during the day or at night when the skyline lights up, Dubai Marina offers breathtaking views and an unforgettable glimpse into the city’s dynamic lifestyle.
+            </p>
+            </div>
+    
+
+            <div class="button-container">
+                <a href="dreamplaces.html" class="nav-box">Go Top</a>
+            </div>
+
+</body>
+</html>
